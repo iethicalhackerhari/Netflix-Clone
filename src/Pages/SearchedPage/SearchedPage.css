@@ -1,0 +1,13 @@
+.searched-movie-div{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+    top: 7%;
+    padding: 5rem 10rem;
+}
+@media screen and (max-width:680px) {
+    .searched-movie-div{
+        padding: 2rem 2rem;
+    }
+}

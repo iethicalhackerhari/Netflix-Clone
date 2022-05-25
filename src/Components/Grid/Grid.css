@@ -1,0 +1,18 @@
+.grid-div{
+    width: 100%;
+    display: grid;
+    justify-content: space-evenly;
+    grid-template-columns: repeat(auto-fit,10rem);
+    grid-template-rows: auto;
+}
+.grid-img{
+    height: 15rem;
+   padding: 1rem;
+    object-fit: contain;
+}
+.card-details-div{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}

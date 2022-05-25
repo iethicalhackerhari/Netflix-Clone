@@ -1,0 +1,8 @@
+.footer{
+    border-top:1px solid #717171 ;
+    color: #717171;
+    text-transform: uppercase;
+    font-size: x-small;
+    width:100%;
+    padding: 1rem;
+}

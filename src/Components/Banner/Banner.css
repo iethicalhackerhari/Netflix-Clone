@@ -1,0 +1,171 @@
+.banner-container {
+    position: relative;
+}
+
+.banner-background {
+
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    padding: 1rem 2rem;
+    background-size: cover;
+    background-position: center center;
+    min-height: 65vh;
+
+}
+
+.banner-title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 70%;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 4px rgb(0 0 0 / 45%);
+    font-family: 'Bebas Neue';
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    z-index: 2;
+    margin-bottom: 0.5rem;
+    transition: 0.2s ease-in-out;
+}
+.banner-title:hover{
+    overflow: visible;
+}
+.banner-description {
+    text-shadow: 2px 2px 4px rgb(0 0 0 / 45%);
+    max-width: 40%;
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+    z-index: 2;
+}
+
+.banner-buttons {
+    z-index: 2;
+    display: flex;
+    margin-top: 0.3rem;
+}
+
+.banner-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.2rem 0.7rem;
+    border-radius: 0.3rem;
+    border: none;
+    margin-right: 0.4rem;
+    font-weight: bold;
+    font-size: 0.8rem;
+    transition: 0.05s ease-in-out;
+    cursor: pointer;
+}
+
+.more-info{
+    color: #fcfcfc;
+    background: rgba(80,81,80.0,0.8);
+}
+
+.more-info:hover{
+    background: rgb(30, 30, 30);
+}
+.play:hover{
+    background: rgba(255, 255, 255, 0.8);
+}
+.banner-button svg {
+    font-size: large;
+    margin-right: 0.2rem;
+}
+.genre{
+    
+    position: absolute;
+    bottom: 5%;
+    color: rgba(255, 255, 255, 0.708);
+    z-index: 1;
+    justify-content: center;
+    display: flex;
+    width: 90%;
+    font-size: small;
+    font-weight: bold;
+
+}
+.genre li{
+    text-transform: uppercase;
+    list-style: none;
+    margin: 1rem;
+}
+.gradient {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: transparent;
+    background: linear-gradient(0deg, rgba(20, 20, 20, 2), rgba(20, 20, 20, 0.1), rgba(255, 255, 255, 0));
+    height: 100%;
+}
+
+@media screen and (min-width:800px) {
+    .gradient{
+        background: linear-gradient(0deg, rgba(20, 20, 20, 2), rgba(20, 20, 20, 0.1), rgba(255, 255, 255, 0));
+
+    }
+    
+    .banner-background{
+        background-position: center top;
+        min-height: 100vh;
+        padding: 3.5rem;
+    }
+    .banner-title{
+        margin-top: 7%;
+        font-size: 6rem;
+        letter-spacing: 3px;
+        max-width: 70%;
+    }
+    .banner-description{
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+        
+    }
+    .banner-button{
+        font-size: 1.2rem;
+        margin-right: 0.8rem;
+        padding: 0.5rem 1.8rem;
+    }
+    .banner-button svg{
+        font-size: xx-large;
+    }
+}
+
+@media screen and (max-width:480px){
+    .genre{
+        z-index: 1;
+        color: #fcfcfcbe;
+        justify-content: space-evenly;
+        display: flex;
+        max-width: 80%;
+        bottom: 5%;
+    }
+    .genre li{
+        font-size: x-small;
+        text-align: center;
+    }
+    .banner-background {
+
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        text-align: center;
+        padding: 1rem 2rem;
+        background-size: cover;
+        background-position: center center;
+        min-height: 65vh;
+    
+    }
+    .banner-title{
+        width: 100%;
+    }
+    .banner-description{
+        max-width: 80%;
+    }
+}
